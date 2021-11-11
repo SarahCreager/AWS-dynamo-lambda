@@ -4,6 +4,8 @@ exports.handler = async (event) => {
     
   const jsonBody = JSON.parse(event.body);
 
+  //lines 10-16 connect to our dynamo db table
+
   // define a schema for dynamoose / dynamo db
   const peopleSchema = new dynamoose.Schema({
     'id': Number,
